@@ -63,7 +63,7 @@ string(REGEX REPLACE
   CMAKE_REQUIRED_FLAGS
   "${CMAKE_REQUIRED_FLAGS}")
 
-check_symbol_exists(pthread_atfork pthread.h FOLLY_HAVE_PTHREAD_ATFORK)
+#check_symbol_exists(pthread_atfork pthread.h FOLLY_HAVE_PTHREAD_ATFORK)
 
 # Unfortunately check_symbol_exists() does not work for memrchr():
 # it fails complaining that there are multiple overloaded versions of memrchr()
